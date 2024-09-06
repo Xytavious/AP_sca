@@ -5,7 +5,7 @@ public class Prog54a {
         Scanner keyboard = new Scanner(System.in);
 
         // int, double, bool, String
-        System.out.print("Enter the cat model: ");
+        System.out.print("Enter the car model: ");
         String model = keyboard.nextLine();
 
         System.out.print("Enter miles driven ");
@@ -19,3 +19,10 @@ public class Prog54a {
 
     }
 }
+/*
+Enter the car model: G-wagon
+Enter miles driven 60,000
+Enter the gals used10
+mpg used by Gwagon is 6000.0m/g
+
+ */

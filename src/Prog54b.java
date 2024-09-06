@@ -28,3 +28,14 @@ public class Prog54b {
 
     }
 }
+/*
+Enter Second Number: 24
+
+Enter Number: 12
+
+Enter Number: 14
+
+sum = 95
+average = 23.0
+
+ */
