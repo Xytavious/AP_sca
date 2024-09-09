@@ -2,7 +2,7 @@ package Q1;
 import java.util.*;
 public class prog58h {
     public static void main(String[] args){
-        scanner input = new scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Enter amount saved ");
         double AS = input.nextDouble();
@@ -20,6 +20,6 @@ public class prog58h {
         double NOD = input.nextDouble();
         System.out.println();
 
-        double intrist = AS *((1+))
+        double Interest = AS *(1+((.01 * IR)/NOD * CPY* NOD / 365);
     }
 }
