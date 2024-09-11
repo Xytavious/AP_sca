@@ -22,8 +22,10 @@ public class Prog65h {
         convert to only
         pounds and pence
         */
-        if (shilly == 12 )
-            else;
+        if (shilly == 20 ){
+            pound = pound + 1;
+
+        }
 
     }
 }
