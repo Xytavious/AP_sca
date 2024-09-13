@@ -20,6 +20,6 @@ public class prog58h {
         double NOD = input.nextDouble();
         System.out.println();
 
-        double Interest = AS *(1+((.01 * IR)/NOD * CPY* NOD / 365);
+        double Interest = AS * 1+((.01 * IR)/NOD * CPY* NOD / 365);
     }
 }
