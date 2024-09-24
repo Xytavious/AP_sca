@@ -13,23 +13,8 @@ public class Prog58t {
 
         double change = rec - price;
 
-
-        int dollars = 0;
-        int Qu = 0;
-        int Dimes =0;
-        int nik = 0;
-        int pen =0;
-
-        while (change > 1)
-        {
-            dollars ++;
-            change --;
-        }
-        while (change >= .25)
-        {
-            Qu +=1;
-
-        }
+        double numD = (change /100) % 100;
+        double numQ = (change %25 )
 
 
 
