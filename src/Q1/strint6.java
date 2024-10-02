@@ -5,7 +5,7 @@ public class strint6 {
         Scanner wow = new Scanner(System.in);
         String text = wow.nextLine().toLowerCase().trim();
         int un = 0;
-        text.indexOf()
+        text.indexOf(un);
 
         // Scanner kbd = new Scanner(System.in);
         //        System.out.println("enter word: ");

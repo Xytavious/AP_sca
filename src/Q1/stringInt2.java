@@ -22,8 +22,8 @@ public class stringInt2
                 if (i != -1){
                     word2 = word2.substring(0,1)+ word2.substring(i+1);
                 }else{System.out.println("not anagrams");
+                }
             }
         }
-    }
         System.out.println("are the strings anagrams: " + word2.isEmpty());
- }
+    }
