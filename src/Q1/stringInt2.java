@@ -26,4 +26,5 @@ public class stringInt2
             }
         }
         System.out.println("are the strings anagrams: " + word2.isEmpty());
+
     }
