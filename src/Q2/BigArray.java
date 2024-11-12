@@ -59,9 +59,81 @@ public class BigArray {
         for (int x : array)
             System.out.println(x + " ");
 
-        int myThird = arrayp[2];
+        int myThird = array[2];
         array[2]=5;
         System.out.println("The number that was outsted is " + myThird);
 
+        for (int num: array)
+            if(num>=50&&num<=59)
+                System.out.println(num + " ");
+
+        for (int i =0; i < array.length; i++)
+            if(array[i]%4==0)
+                System.out.println(array[1] +" ");
+
+        boolean sixty = false;
+        for (int n : array)
+            if (n ==60) sixty = true;
+        System.out.println("Is 60 in the list: " + sixty);
+
+        boolean same = true;
+        for (int lcv = 0; lcv< array.length; lcv++)
+            if (array[lcv]!= array[(array.length-1)-lcv])
+                same = false;
+        System.out.println("Is the array palindromeic: "+same);
+
+        double average = 0;
+        for (int x : array )
+            average += x;
+        average /= array.length;
+
+        int avgCount = 0;
+        for (int x : array)
+            if (x >average) average++;
+        System.out.printf("There are %d numbers greator then the average\n", avgCount);
+
+        int evens = 0;
+        for (int num : array)
+            if (num % 2 ==0)evens++;
+        System.out.printf("There are %d even numbers\n", evens);
+
+        int[] array2 = new int[array.length];
+        for (int i = 0; i< array.length; i++)
+            array2[i] = array[(array.length-1) -1];
+
+        //17
+        int[] shiftArr = CshiftR(array);
+        for (int n : shiftArr)
+            System.out.print(n+ " ");
+        System.out.println("");
+
+        for (int n : array2)
+            System.out.print(n +" ");
+        System.out.println("");
+
+
+        int sum = 0;
+        for (int num : array){
+            int digitsum = 0;
+            int temp = num;
+            while (temp > 0){
+                int n = temp % 10;
+                temp/= 10;
+                digitsum += n;
+            }
+            sum += digitsum;
+
+        }
+        System.out.println("Sum of all Digits of all elements: " +sum);
+
+
+    }
+    public  static int[] CshiftR(int[]arr){
+        int temp = arr[arr.length-1];
+        int[] shifted = new int[arr.length];
+        for (int lcv = 1; lcv < arr.length; lcv++)
+            shifted[lcv]= arr[lcv-1];
+        shifted[0] = temp;
+        return shifted;
     }
 }

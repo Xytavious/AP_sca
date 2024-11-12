@@ -13,7 +13,7 @@ public class Cl435a {
     private int v;
     private int tpye;
 
-    public void calc(int t,int ){
+    public void calc(int t,int u){
 
     }
 
