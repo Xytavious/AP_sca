@@ -4,32 +4,38 @@ public class Lp3dash9 {
     public static void main(String[] args) {
         Scanner wow = new Scanner(System.in);
         System.out.println("Enter Your Birthdate: ");
-        int Bday = wow.nextInt();
+        // 1 year = 365  months 1 month = 30 days day =1
 
-        int years = 365 % 1;
 
-        System.out.println("Year:");
-        int year = 0;
 
         System.out.println("Year:");
-        int month =0;
+        int year = wow.nextInt();
 
-        System.out.println("Year:");
-        int day =0;
+        System.out.println("Month:");
+        int month = wow.nextInt();
+
+        System.out.println("Day:");
+        int day = wow.nextInt();
 
         System.out.println("Enter todays Date:");
-        int today = wow.nextInt();
 
         System.out.println("Year:");
-        int Tyear = 0;
+        int Tyear = wow.nextInt();
 
-        System.out.println("Year:");
-        int Tmonth =0;
+        System.out.println("Month:");
+        int Tmonth = wow.nextInt();
 
-        System.out.println("Year:");
-        int Tday =0;
+        System.out.println("Day:");
+        int Tday = wow.nextInt();
 
-         int ta =0;
+
+         int yd= (Tyear -year) *365;
+         int md= (Tmonth - month) * 12;
+         int dd = Tday - day;
+         int we = (yd + md +dd);
+         System.out.println(we);
+         int tot = (we *24 )/8;
+         System.out.println(tot);
 
     }
 }

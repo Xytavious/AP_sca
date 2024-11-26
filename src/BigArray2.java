@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class BigArray2 {
     public static void printCat(Cat cat) {
-        System.out.println("%s\t%f\");
+        /*System.out.println("%s\t%f\");
                 cat.getName(), cat.getWeight(), cat.getAge(), cat.getCost());
 
     }
@@ -83,6 +83,6 @@ public class BigArray2 {
             int k = 0;
             while (k < numCats)
         }
-    }
+    }*/
 }
 }
