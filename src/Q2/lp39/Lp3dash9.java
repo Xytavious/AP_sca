@@ -1,4 +1,4 @@
-package Q2;
+package Q2.lp39;
 import java.util.Scanner;
 public class Lp3dash9 {
     public static void main(String[] args) {
@@ -17,8 +17,7 @@ public class Lp3dash9 {
         System.out.println("Day:");
         int day = wow.nextInt();
 
-        System.out.println("Enter todays Date:");
-
+        System.out.println("Enter today's Date:");
         System.out.println("Year:");
         int Tyear = wow.nextInt();
 
@@ -32,9 +31,9 @@ public class Lp3dash9 {
          int yd= (Tyear -year) *365;
          int md= (Tmonth - month) * 12;
          int dd = Tday - day;
-         int we = (yd + md +dd);
-         System.out.println(we);
-         int tot = (we *24 )/8;
+         int totalDays = (yd + md +dd);
+         System.out.println(totalDays);
+         int tot = (totalDays /8 )*24;
          System.out.println(tot);
 
     }
