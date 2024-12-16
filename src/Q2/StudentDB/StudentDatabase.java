@@ -14,7 +14,7 @@ public class StudentDatabase {
     }
 
     public static void printStu(Student s){
-        System.out.printf("%s\t%s\t%d\t%.2\n",
+        System.out.printf("%s\t%s\t%d\t%.2f\n",
                 s.getFirstName(), s.getLastName(), s.getId(), s.getGPA());
     }
 
@@ -76,10 +76,11 @@ public class StudentDatabase {
 
                 }
             }else if (c==6){
-                System.out.println("Enter student ID: ");
+                System.out.print("Enter student ID: ");
                 int id = input.nextInt();
-                int index = indexofStu(db,id);
-                if (in)
+                int index = indexofStu(db, id);
+                if (index == -1) System.out.println("No student was found with that ID.");
+                else db.remove(index);
             }else if (c==7){
                 return;
             }
