@@ -1,6 +1,5 @@
 package Q2.Project2ApPrince;
 
-import Q2.StudentDB.Student;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,7 +11,12 @@ public class project2 {
     }
     public static int indexofPas(ArrayList<Password> db,String us){
         for (int i = 0; i< db.size(); i++)
-            if (db.get(i).getUsername().equals(us)) return i;
+            if (db.get(i).getWebsite().equals (us)) return i;
+        return -1;
+    }
+    public static int indexofPa(ArrayList<Password> db,int us){
+        for (int i = 0; i< db.size(); i++)
+            if (db.get(i).getPassword()== (us)) return i;
         return -1;
     }
 
@@ -22,11 +26,11 @@ public class project2 {
 
         while (true){
             System.out.println("Password Manager Menu:");
-            System.out.println("1 - Add new Password: ");
-            System.out.println("2 - Display all Passwords");
-            System.out.println("3 - Search for Password (by website)");
-            System.out.println("4 - Modify Password");
-            System.out.println("5 - Remove password (by website)");
+            System.out.println("1 - Add new Password: "); // done 1
+            System.out.println("2 - Display all Passwords"); // done 2
+            System.out.println("3 - Search by Password)");// done
+            System.out.println("4 - Modify Password");  //3
+            System.out.println("5 - Remove password (by website)"); // 4
             System.out.println("6 - Exit");
             System.out.print("Please enter your choice:");
             int c = input.nextInt();
@@ -47,13 +51,19 @@ public class project2 {
                     printPas(s);
 
             }else if (c==3){
-                System.out.print("Enter Website Name: ");
-                String we= input.next();
-                int index = indexofPas(db,we);
+                System.out.print("Enter Last Password you remember  : ");
+                int we= input.nextInt();
+                int index = indexofPa(db,we);
                 if (index != -1)printPas(db.get(index));
-                else System.out.println("No Website was found with that Name.");
+                else System.out.println("No Password was found.");
+
             }else if (c==4){
+
                 System.out.print("Enter Website Name: ");
+                String w = input.next();
+                System.out.print("Enter Username: ");
+                String u = input.next();
+                System.out.print("Enter New Password: ");
                 String us= input.next();
                 int index = indexofPas(db,us);
                 if (index == -1)System.out.println("No Website was found with that Name.");
@@ -65,10 +75,10 @@ public class project2 {
 
                 }
             }else if (c==5){
-                System.out.print("Enter student ID: ");
+                System.out.print("Enter Website Name: ");
                 String id = input.next();
                 int index = indexofPas(db, id);
-                if (index == -1) System.out.println("No student was found with that ID.");
+                if (index == -1) System.out.println("No website was found with that Name.");
                 else db.remove(index);
             }else if (c==6){
                 return;

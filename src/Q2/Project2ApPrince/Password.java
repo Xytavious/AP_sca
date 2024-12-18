@@ -23,4 +23,13 @@ public class Password {
         return password;
     }
     public void setPassword(int pa) { password = pa; }
+
+    public void setUsername(String username) {
+        Username = username;
+
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
 }
