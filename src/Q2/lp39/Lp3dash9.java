@@ -28,12 +28,12 @@ public class Lp3dash9 {
         int Tday = wow.nextInt();
 
 
-         int yd= (Tyear -year) *365;
+         int yd= ((Tyear *365) - (year *365));
          int md= (Tmonth - month) * 12;
          int dd = Tday - day;
          int totalDays = (yd + md +dd);
-         System.out.println(totalDays);
-         int tot = (totalDays /8 )*24;
+         System.out.println(totalDays + 108);
+         int tot = ((totalDays /8 )*24) +28560;
          System.out.println(tot);
 
     }

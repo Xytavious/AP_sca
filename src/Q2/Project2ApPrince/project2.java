@@ -60,15 +60,11 @@ public class project2 {
             }else if (c==4){
 
                 System.out.print("Enter Website Name: ");
-                String w = input.next();
-                System.out.print("Enter Username: ");
-                String u = input.next();
-                System.out.print("Enter New Password: ");
                 String us= input.next();
                 int index = indexofPas(db,us);
                 if (index == -1)System.out.println("No Website was found with that Name.");
                 else{
-                    System.out.print("Enter Password");
+                    System.out.print("Enter Password: ");
                     int wer= input.nextInt();
                     db.get(index).setPassword(wer);
                     System.out.println("Password updated Successfully!");
