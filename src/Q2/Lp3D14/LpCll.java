@@ -8,5 +8,5 @@ public class LpCll {
     private int Mj;
     private int Mc;
 
-    public void LpCLl(int nw, int nj,int c)
+   // public void LpCLl(int nw, int nj,int c)
 }
