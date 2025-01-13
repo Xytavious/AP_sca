@@ -9,7 +9,7 @@ public class BigarrayListCat {
     public static void printCat(Cat cat){
         System.out.printf("%s\t%.2f\t%d\t%.2f\n");
         {
-            cat.getName(), cat.getWeight(),cat.getAge(),cat.getCost()
+           // cat.getName(), cat.getWeight(),cat.getAge(),cat.getCost()
         }
     }
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class BigarrayListCat {
                 printCat(cat);
 
             Cat third = cats.get(2);
-            cats.set(new Cat("Sugar", 23.6,7,33.25));
+          //  cats.set(new Cat("Sugar", 23.6,7,33.25));
             cats.add(third);
 
             Cat temp= cats.get(1);

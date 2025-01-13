@@ -82,14 +82,5 @@ public class project2 {
         }
     }
 }
-/*
- System.out.println("Student Menu:");
-            System.out.println("1 - Add new student");
-            System.out.println("2 - Display all students");
-            System.out.println("3 - Search for student (by id)");
-            System.out.println("4 - Search for student (by last name)");
-            System.out.println("5 - Modify a student’s gpa");
-            System.out.println("6 - Remove student (by id)");
-            System.out.println("7 - Exit");
-            System.out.print("Please enter your choice:");
- */
+
+ 
