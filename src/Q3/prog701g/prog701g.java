@@ -33,9 +33,35 @@ public class prog701g {
                 num = file.nextInt();
 
             }
+
+            double tot = 0;
+            int cnt = 0;
+            int totsut= 0;
+            String large = "";
+            String small = "ioauohbgajlhdlfhbalwehbf;lkawgflakjhglkjgf;lkajhrkgflqahglfdkfkjgalbkdufohiuwahflkjbalfvblyagrlalkjdhfaoiwhlkjdhfaliuwhelkjhldkashfiuwflkajhf";
+            for (Person p : list) {
+                if (p instanceof Student) {
+                tot += ((Student)p).getMyGPA();
+                cnt++;
+                }else if (p instanceof Teacher) {
+                totsut += ((Teacher)p).getMyNumStu();
+                } else if(p instanceof Admin) {
+                String word = ((Admin)p).getMyFavW();
+                if (word.length() > large.length())
+                    large = word;
+                if (word.length() < small.length())
+                    small = word;
+                }
+            }
+
+            System.out.printf("Average student GPA: %.2\n", tot/cnt);
+            System.out.println("Total number of students taught by teachers: " + totsut);
+            System.out.println("Smallest Facorite Admin word: " + small);
+            System.out.println("Largest Favorite Admin word: " + large);
+
         }catch (IOException e){
             System.out.println("Error: " + e.getStackTrace());
         }
     }
 }
-}
+
