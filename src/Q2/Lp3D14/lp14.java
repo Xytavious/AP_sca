@@ -18,7 +18,7 @@ public class lp14 {
         int some;
         LpCll pop = new LpCll();
 
-         .out.println("Awbery \t Martinez");
+         System.out.println("Awbery \t Martinez");
         System.out.println("New York \t ");
         System.out.println("New Jersey \t 89008 \t 121032");
         System.out.println("Connecticut \t 213451 \t 231034");
