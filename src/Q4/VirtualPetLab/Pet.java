@@ -1,4 +1,4 @@
-package pets;
+package Q4.VirtualPetLab;
 
 public abstract class Pet {
     private final String name;
@@ -39,5 +39,4 @@ public abstract class Pet {
     // It may also be help to make a public/protected "clampAttributes()" method to ensure that the pet's attributes do
     // not exceed their maximum values or drop below 0 when feeding/playing/sleeping. Call this method using 'super'.
 }
-
 
