@@ -1,6 +1,7 @@
 package Q4.VirtualPetLab;
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +17,7 @@ public class MainForm extends JFrame {
     // TODO: add adoption buttons
     // Pet list
     private PetManager petManager = new PetManager();
+    ArrayList<Pet> petAList = new ArrayList<Pet>();
 
     public MainForm() {
         super("Virtual Pet Simulator");
@@ -38,6 +40,7 @@ public class MainForm extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement feeding the selected pet
+                return(pet)
             }
         });
 
