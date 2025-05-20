@@ -30,6 +30,7 @@ public class MainForm extends JFrame {
         this.pack();
 
         // Initialize starting pets
+
         petManager.addPet(new Dog("Buddy"));
         petManager.addPet(new Cat("Whiskers"));
         this.updatePetList();
@@ -40,7 +41,7 @@ public class MainForm extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement feeding the selected pet
-                return(pet)
+
             }
         });
 
