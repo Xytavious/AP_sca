@@ -42,7 +42,7 @@ public class Cl {
             String bestName = list.get(0).getMyName();
             for (int lcv = 1; lcv < list.size(); lcv++){
                 Bookperson bill = list.get(lcv);
-                if (bill.m())
+                //if (bill.m());
             }
 
 

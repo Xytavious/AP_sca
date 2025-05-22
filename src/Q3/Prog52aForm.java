@@ -10,7 +10,7 @@ public class Prog52aForm {
     public static void main(String[] args){
         JFrame frame = new JFrame("Prog52a");
         frame.setContentPane(new Prog52aForm().MainPanel);
-        frame.setDefaultCloseOperation(JFrame.);
+        //frame.setDefaultCloseOperation(JFrame.);
 
     }
 }

@@ -18,10 +18,10 @@ public class prog470a {
 
                     }
                 }
-                }
             }
-        catch(IOException e){
+        } catch (IOException e) {
             System.out.println("Error: " + e.getStackTrace());
+        }
     }
 
-}
+    }

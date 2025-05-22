@@ -1,4 +1,4 @@
-package Q4;
+package Q3.VirtualPetLab;
 
 public abstract class Pet {
     private final String name;

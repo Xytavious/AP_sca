@@ -1,10 +1,4 @@
-package Q4;
-import javax.swing.*;
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.Base64;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+package Q3.VirtualPetLab;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
 
 public class MainForm extends JFrame {
     private JPanel mainPanel;
@@ -24,6 +17,8 @@ public class MainForm extends JFrame {
     private JButton dogButton;
     private JLabel statusLabel;
     private JLabel imageLabel;
+    private JButton button1;
+    private JTextField textField1;
     private JComboBox<String> petSelectorComboBox;
     // TODO: add adoption buttons
     // Pet list
@@ -107,9 +102,9 @@ public class MainForm extends JFrame {
                     }
                 }
 
-                Pet fox = new Fox(name);
-                PetList.add(fox);
-                updatePetList();
+               // Pet fox = new Fox(name);
+               // PetList.add(fox);
+                //updatePetList();
             }
         });
 
