@@ -1,4 +1,4 @@
-package Q4.VirtualPetLab;
+package Q4;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;

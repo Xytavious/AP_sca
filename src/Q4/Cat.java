@@ -1,4 +1,4 @@
-package Q4.VirtualPetLab;
+package Q4;
 
 public class Cat extends Pet {
     public Cat(String name) {

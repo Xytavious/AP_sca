@@ -1,4 +1,4 @@
-package Q4.VirtualPetLab;
+package Q4;
 
 import java.awt.image.BufferedImage;
 import java.io.InputStream;

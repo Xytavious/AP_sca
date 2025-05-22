@@ -1,4 +1,4 @@
-package Q4.VirtualPetLab;
+package Q4;
 import java.util.ArrayList;
 
 public class PetManager {
