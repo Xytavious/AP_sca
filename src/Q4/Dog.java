@@ -43,5 +43,18 @@ public class Dog extends Pet {
     @Override
     public void sleep() {
         // TODO: Implement sleeping behavior for Dog
+        setEnergy(getEnergy()+100);
+        if (getEnergy() > 100){
+            setEnergy(100);
+        }
+        setHunger(getHunger()-5);
+        if(getHunger()<=0){
+            System.out.println("Dog has Died!! ૮(˶ㅠ︿ㅠ)ა");
+        }
+        setHappiness(getHappiness()+20);
+        if(getHappiness()<20){
+            System.out.println("Dogo Espresso Depresso  (˃̣̣̥ᯅ˂̣̣̥) .·°");
+        }
+
     }
 }
