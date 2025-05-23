@@ -12,14 +12,17 @@ public class Dog extends Pet {
         // TODO: Implement feeding behavior for Dog
         setHunger(getHunger()+20);
         if (getHunger() >=100){
+            setHunger(100);
             System.out.println("Dog Stuffed!! ૮₍ ˃ ⤙ ˂ ₎ა");
         }
         setHappiness(getHappiness()+5);
         if (getHappiness()>=100){
+            setHappiness(100);
             System.out.println("Dog is supper happy!! ໒( ̿❍ ᴥ ̿❍)ʋ");
         }
         setEnergy(getEnergy()+20);
         if (getEnergy()>=100){
+            setEnergy(100);
             System.out.println("Dog: *weeeeee!!!*   ( ˶ˆᗜˆ˵ ) ");
         }
     }
@@ -29,14 +32,17 @@ public class Dog extends Pet {
         // TODO: Implement playing behavior for Dog
         setHappiness(getHappiness()+30);
         if(getHappiness()<20){
+            setHappiness(0);
             System.out.println("Dogo Espresso Depresso  (˃̣̣̥ᯅ˂̣̣̥) .·°");
         }
         setHunger(getHunger()-5);
         if(getHunger()<=0){
+            setHunger(0);
             System.out.println("Dog has Died!! ૮(˶ㅠ︿ㅠ)ა");
         }
         setEnergy(getEnergy()-15);
         if (getEnergy()<= 0){
+            setEnergy(0);
             System.out.println("Dog tired ᶻz(-‸ -。)");
         }
     }
@@ -50,10 +56,12 @@ public class Dog extends Pet {
         }
         setHunger(getHunger()-5);
         if(getHunger()<=0){
+            setHunger(0);
             System.out.println("Dog has Died!! ૮(˶ㅠ︿ㅠ)ა");
         }
         setHappiness(getHappiness()+20);
         if(getHappiness()<20){
+            setHappiness(0);
             System.out.println("Dogo Espresso Depresso  (˃̣̣̥ᯅ˂̣̣̥) .·°");
         }
     }

@@ -9,16 +9,18 @@ public class Cat extends Pet {
     @Override
     public void feed() {
         setHunger(getHunger()+20);
-        if (getHunger()<=0);
-        {
+        if (getHunger()<=0);{
+            setHunger(0);
             System.out.println("Hungry");
         }
         setEnergy(getEnergy()+10);
         if(getEnergy()<=10){
+            setEnergy(0);
             System.out.println("Tired");
         }
         setHappiness(getHappiness()+5);
         if(getHappiness()<=5){
+            setHappiness(0);
             System.out.println("sad boi");
         }
     }
@@ -28,10 +30,13 @@ public class Cat extends Pet {
         // TODO: Implement playing behavior for Cat
         setHappiness(getHappiness()+30);
         if(getHappiness()<=20){
+            setHappiness(0);
             System.out.println("Sad boi");
         }
         setHunger(getHunger()-30);
         if(getHunger()<=0){
+            setHunger(0);
+
             System.out.println("YOU KILLED IT!!!");
         }
         setEnergy(getEnergy()-20);
